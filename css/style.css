@@ -1,0 +1,195 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#cover {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/cover.jpg) no-repeat center fixed;
+    padding-top: 15%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    z-index: -2;
+    -webkit-animation: c_fade 2s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes c_fade {
+    0% { opacity: 0; }
+    100% { opacity: 100; }
+}
+
+#container {
+    width: 100%;
+    height: 110%;
+    padding-top: 20px;
+    background: url(../images/EventBackground.png)no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    z-index: -2;
+}
+
+#info {
+    padding-top: 20px;
+    padding-bottom: 100px;
+    background: black;
+}
+
+.title {
+    opacity: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #94f9c2;
+    font-size: 4.5em;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: -50%;
+    padding-bottom: -50%;
+    clear: both;
+    text-align: center;
+    position: relative;
+    -webkit-animation: title_fade 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+
+
+@-webkit-keyframes title_fade {
+    0% { opacity: 0; padding-top: -50%; padding-bottom: -50%; }
+    100% { opacity: 100; padding-top: 5%; padding-bottom: 5%; }
+}
+
+.des {
+    opacity: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #94f9c2;
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+    margin-top: -50px;
+    -webkit-animation: c_fade 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+
+.indicator {
+    opacity: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #94f9c2;
+    font-size: 1.2em;
+    font-weight: light;
+    clear: both;
+    margin-top: 10%;
+    text-align: center;
+    -webkit-animation: c_fade 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+.arrow {
+    opacity: 0;
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #94f9c2;
+    margin: auto;
+    clear: both;
+    top:-10px;
+    -webkit-animation: c_fade 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 5.5s;
+}
+
+@-webkit-keyframes event_move {
+    0% { -webkit-transform: rotate(0deg); }
+    25% { -webkit-transform: rotate(-15deg); }
+    50% { -webkit-transform: rotate(0deg); }
+    75% { -webkit-transform: rotate(15deg); }
+    100% { -webkit-transform: rotate(0deg); }
+}
+
+.event {
+    position: relative;
+	 font-family: 'Raleway', sans-serif;
+	 font-size: 3em;
+	 font-style: bold;
+	 clear: both;
+	 text-align: center;
+	 padding-top: 20%;
+	 padding-bottom: 20%;
+     -webkit-animation: event_move 3s ease-in-out infinite;
+     animation-delay: 6s;
+
+}
+
+
+@-webkit-keyframes blink {
+    0% { color: white;}
+    50% { color: #94f9c2;}
+    100% { color: white;}
+}
+
+.band {
+	font-family: 'Raleway', sans-serif;
+	color: #94f9c2;
+	font-size: 2.2em;
+	font-style: bold;
+	clear: both;
+	text-align: center;
+    -webkit-animation: blink 2s infinite;
+}
+
+.member {
+	font-family: 'Raleway', sans-serif;
+	color: #94f9c2;
+	font-size: 1.5em;
+	font-weight: 400;
+	clear: both;
+	text-align: center;
+	padding-bottom: 5%;
+    -webkit-animation: blink 2s infinite;
+    animation-delay: 0.5s;
+}
+
+.song {
+    font-family: 'Raleway', sans-serif;
+    color: #94f9c2;
+    font-size: 2.2em;
+    font-style: bold;
+    clear: both;
+    text-align: center;
+    padding-top: 5%;
+    -webkit-animation: blink 2s infinite;
+    animation-delay: 1s;
+}
+
+.list {
+    font-family: 'Raleway', sans-serif;
+    color: #94f9c2;
+    font-size: 1.5em;
+    font-weight: 400;
+    clear: both;
+    text-align: center;
+    padding-bottom: 5%;
+    -webkit-animation: blink 2s infinite;
+    animation-delay: 1.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
